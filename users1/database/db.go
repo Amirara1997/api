@@ -8,11 +8,11 @@ import (
 func NewDB() (*gorm.DB, error) {
 	DBMS := "mysql"
 	mySqlConfig := &mysql.Config{
-		User:                 "admin",
-		Passwd:               "Am!r13769900Am!r",
+		User:                 "",
+		Passwd:               "",
 		Net:                  "tcp",
 		Addr:                 "127.0.0.1:3306",
-		DBName:               "dorf",
+		DBName:               "",
 		AllowNativePasswords: true,
 		Params: map[string]string{
 			"parseTime": "true",
